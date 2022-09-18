@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="fav.png">
+        <link rel="stylesheet" href="../main.css">
+        <meta charset="utf-8" />
+
+        <title>Unit Converter</title>
+    </head>
+    <body>
+        <header>
+            <h1>Convert Units</h1>
+            <nav>
+                <h2 id = "h23">Quick Links</h2>
+                  <ul>  
+                    <li id = "li2"><a id = a2 href="../units/cmToFeet.html">cm to feet</a></li>
+                    <li id = "li2"><a id = a2 href="cmToM.html">cm to m</a></li>
+                    <li id = "li2"><a id = a2 href="gToKg.html">grams to kilograms</a></li>
+                    <li id = "li2"><a id = a2 href="kgToG.html">kilograms to grams</a></li>
+                    <li id = "li2"><a id = a2 href="mToCm.html">m to cm</a></li>
+                    <li id = "li2"><a id = a2 href="mToKm.html">m to km</a></li>
+                    <li id = "li2"><a id = a2 href="mbToGb.html">MB to GB</a></li>
+                    <li id = "li2"><a id = a2 href="clToG.html">moles Cl to g</a></li>
+                    <li id = "li2"><a id = a2 href="RtoG.html">moles RaSO4 to g</a></li>
+                    <li id = "li2"><a id = a2 href="RhtoG.html">moles RhF6 to g</a></li>
+                    <li id = "li2"><a id = a2 href="RONtoNZD.html">RON to NZD</a></li>
+                      
+                  </ul>
+              </nav>
+            </header>
+
+        <section class = "s2">
+            <h2 id = "h21">Convert Metres to Kilometres</h2>
+            
+            <div class="container">
+            
+                <label>m</label>
+                <input type="text" id="me" placeholder="Type in unit">
+                <label>km</label>
+                <select id="measurements">
+                    <option value="Mkm">Km</option>
+                    <option value="Mcm">Cm</option>
+                </select>
+                <input type="text" id="km">
+                <button alt = "convbtn" id="Convert" >Convert!</button>
+
+                <script>
+                    let KGbtn = document.getElementById('Convert');
+
+                    KGbtn.addEventListener('click', function() {
+                        let input = document.getElementById('me').value;
+                        document.getElementById('km').value = input / 1000;
+                    })
+                </script>
+
+                <Script>
+                    document.getElementById("measurements").addEventListener("change", function(event){
+                        if(event.target.value == "Mkm") location.href = "mToKm.html";
+                        else if(event.target.value == "Mcm") location.href = "mToCm.html";
+                    });
+                </Script>
+            </div>
+            <button id="GoBack">Choose Different Units</button>
+            <script>
+                document.getElementById("GoBack").onclick = function () {
+                    window.location.href = "../index.html";
+                };
+            </script>
+        </section>
+        </body>

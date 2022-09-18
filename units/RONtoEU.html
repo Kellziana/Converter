@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="fav.png">
+        <link rel="stylesheet" href="../main.css">
+        <meta charset="utf-8" />
+
+        <title>Unit Converter</title>
+    </head>
+    <body>
+        <header>
+            <h1>Convert Unitsr</h1>
+            <nav>
+                <h2 id = "h23">Quick Links</h2>
+                  <ul>  
+                    <li id = "li2"><a id = a2 href="cmToFeet.html">cm to feet</a></li>
+                    <li id = "li2"><a id = a2 href="cmToM.html">cm to m</a></li>
+                    <li id = "li2"><a id = a2 href="gToKg.html">grams to kilograms</a></li>
+                    <li id = "li2"><a id = a2 href="kgToG.html">kilograms to grams</a></li>
+                    <li id = "li2"><a id = a2 href="mToCm.html">m to cm</a></li>
+                    <li id = "li2"><a id = a2 href="mToKm.html">m to km</a></li>
+                    <li id = "li2"><a id = a2 href="mbToGb.html">MB to GB</a></li>
+                    <li id = "li2"><a id = a2 href="clToG.html">moles Cl to g</a></li>
+                    <li id = "li2"><a id = a2 href="RtoG.html">moles RaSO4 to g</a></li>
+                    <li id = "li2"><a id = a2 href="RhtoG.html">moles RhF6 to g</a></li>
+                    <li id = "li2"><a id = a2 href="RONtoNZD.html">RON to NZD</a></li>
+                      
+                  </ul>
+              </nav>
+            </header>
+
+        <section class = "s2">
+            <h2 id = "h21">Convert RON to EU</h2>
+            
+            <div class="container">
+            
+                <label>RON</label>
+                <input type="text" id="ron" placeholder="Type in unit">
+                <label>EU</label>
+                <select id="currency">
+                    <option value="EU">EURO</option>
+                    <option value="NZD">NZD</option>
+                </select>
+                <input type="text" id="eu">
+                <button alt = "convbtn" id="Convert" >Convert!</button>
+            <script>
+                let RONbtn = document.getElementById('Convert');
+
+                RONbtn.addEventListener('click', function() {
+                    let input = document.getElementById('ron').value;
+                    document.getElementById('eu').value = input * 0.202362;
+                })
+
+            </script>
+
+            <Script>
+                document.getElementById("currency").addEventListener("change", function(event){
+                    if(event.target.value == "NZD") location.href = "RONtoNZD.html";
+                    else if(event.target.value == "EU") location.href = "RONtoEU.html";
+                });
+            </Script>
+            </div>
+        </div>
+        <button id="GoBack">Choose Different Units</button>
+            <script>
+                document.getElementById("GoBack").onclick = function () {
+                    window.location.href = "../index.html";
+                };
+            </script>
+        </section>
+        </body>

@@ -1,0 +1,214 @@
+body {
+margin:0px;
+padding: 0px;
+font-family: Tahoma, Verdana, sans-serif;
+background-color: rgb(0, 53, 72);
+}
+
+nav {
+width: 200px;
+height: 600px;
+background-color: rgb(206, 206, 206);
+padding-left: 10px;
+padding-right: 60px;
+padding-top: 10px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+a{
+    font-size: 140%;
+}
+
+ul {
+justify-content: space-between;
+display: block;
+}
+
+#li2 {
+    list-style: none;
+    margin-bottom: 10px;
+
+}
+
+#b1 {
+border-top: solid black 2px; 
+margin: 5px;
+padding: 10px;
+width: 100%;
+border-radius: 10px;
+color: rgb(0, 0, 0);
+cursor: pointer;
+font-size: 100%;
+box-shadow: 5px 10px 20px #708860 inset;
+}
+
+#b1:hover:not(a) {
+    background-color: rgb(143, 19, 19);
+    box-shadow: 5px 10px 20px rgb(85, 12, 12) inset;
+    color: white;
+}
+
+h1{
+text-align: center;
+padding: 15px;
+background-color: rgb(206, 206, 206);;
+color: rgb(27, 27, 27);
+}
+
+h2{
+color: rgb(6, 145, 196);
+font-size: 200%;
+}
+
+#h21{
+color: rgb(6, 145, 196);
+position: relative;
+bottom: 590px;
+margin-left: 300px;
+font-size: 200%;
+}
+
+#h22{
+color: rgb(6, 145, 196);
+position: relative;
+bottom: 520px;
+margin-left: 300px;
+font-size: 200%;
+}
+
+#ul1{
+background-color: rgb(196, 196, 196);
+color: rgb(0, 0, 0);
+font-size: 120%;
+display: block;
+margin-left: 300px;
+margin-right: 300px;
+padding: 30px;
+position: relative;
+bottom: 600px;
+border-radius: 10px;
+
+}
+
+#li1{
+font-size: 120%
+}
+
+#h23 {
+color: #000000;
+font-size: 200%;
+}
+
+#a2 {
+color: #000000;
+font-size: 100%;
+margin-left:100px ;
+text-decoration: underline;
+margin: 2px;
+padding: 10px;
+}
+
+#a2:hover {
+color:rgb(143, 19, 19)
+}
+
+#ul2{
+list-style-type: none;
+}
+
+.container{
+position: relative;
+bottom: 500px;
+margin-left: 300px;
+margin-right: 300px;
+background-color: rgb(196, 196, 196);
+padding: 30px;
+border-radius: 4px;
+border: 2px solid rgb(204, 203, 203);;
+}
+
+#Go {
+    height: 30px;
+    width: 50px;
+    box-shadow: 2px 5px 20px #a7a7a7 inset;
+}
+#Go:hover {
+background-color: #9cc282;
+box-shadow: rgb(0, 55, 75);
+cursor: pointer;
+}
+
+button:hover {
+background-color: #9cc282;
+}
+
+input[type=text] {
+width: 25%;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+font-size: 16px;
+background-color: white;
+background-position: 10px 10px; 
+background-repeat: no-repeat;
+}
+
+input:focus{
+background-color: lightblue;
+}
+
+label {
+font-size: 110%;
+}
+
+#GoBack {
+position: relative;
+bottom:400px;
+margin-left: 300px;
+background-color:#9cc282;
+width: 20%;
+border-radius: 8px;
+cursor: pointer;
+color: rgb(0, 0, 0);
+font-size: 130%;
+box-shadow: 5px 10px 20px #708860 inset;
+}
+
+#GoBack:hover{
+    background-color: rgb(6, 145, 196);
+    box-shadow: 5px 10px 20px rgb(0, 3, 34) inset;
+    color: white;
+}
+
+#switch {
+background-color: lightblue;
+height: 40px;
+font-size: 15px;
+color: rgb(255, 255, 255);
+cursor: pointer;
+
+}
+
+#switch:hover {
+    background-color: rgb(6, 145, 196);
+    color: white;
+    box-shadow: 5px 10px 20px rgb(0, 3, 34) inset;
+}
+
+#Convert {
+background-color: #9cc282;
+height: 40px;
+font-size: 15px;
+cursor: pointer;
+color: rgb(255, 255, 255);
+}
+#Convert:hover {
+    background-color: rgb(6, 145, 196);
+    box-shadow: 5px 10px 20px rgb(0, 3, 34) inset;
+    color: white;
+}
+
+select {
+cursor: pointer;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="fav.png">
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8" />
+
+        <title>Unit Converter</title>
+    </head>
+    <body>
+      <header>
+        <h1>Convert Units</h1>
+
+        <nav>
+          <h2 id = "h23">Quick Links</h2>
+            <ul>  
+              <li id = "li2"><a id = a2 href="./units/cmToFeet.html">cm to feet</a></li>
+              <li id = "li2"><a id = a2 href="./units/cmToM.html">cm to m</a></li>
+              <li id = "li2"><a id = a2 href="./units/gToKg.html">grams to kilograms</a></li>
+              <li id = "li2"><a id = a2 href="./units/kgToG.html">kilograms to grams</a></li>
+              <li id = "li2"><a id = a2 href="./units/mToCm.html">m to cm</a></li>
+              <li id = "li2"><a id = a2 href="./units/mToKm.html">m to km</a></li>
+              <li id = "li2"><a id = a2 href="./units/mbToGb.html">MB to GB</a></li>
+              <li id = "li2"><a id = a2 href="./units/clToG.html">moles Cl to g</a></li>
+              <li id = "li2"><a id = a2 href="./units/RtoG.html">moles RaSO4 to g</a></li>
+              <li id = "li2"><a id = a2 href="./units/RhtoG.html">moles RhF6 to g</a></li>
+              <li id = "li2"><a id = a2 href="./units/RONtoNZD.html">RON to NZD</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+        <section class="s1">
+            <h2 id = "h21">What and how?</h2>
+            <ul id = "ul1">
+                <li id = "li1">Calculator for <b>all types of measurement units.</b></li>
+                <li id = "li1">Metric conversion tables for <b>SI units, English units, currency, and other data.</b></li>
+                <li id = "li1"><b>Type in unit symbols, abbreviations,</b> or <b>full names</b> for units of length, area, mass, pressure, and other types.</li>
+            </ul>
+        </section>
+
+        <section class = "s2">
+            <h2 id = "h22">Enter measurement units to convert</h2>
+        <form action= "javascript:redirect();"> 
+        <div class="container">
+                <label for="unit1">Convert</label>
+                <input type="text" id="unit1" placeholder="Type in unit">
+                <label for="unit1">to</label>
+                <input type="text" id="unit2" placeholder="Type in unit">
+              <input id="Go" type="submit" value="Go!" onclick="redirect();"/>
+        <script>
+
+          /*I have only done a few units which include cm to feet, cm to m, g to kg, kg to g
+          m to cm, m to km, quart per day to gallon per hour, RON to NZD and several types of moles to grams
+          in which I added a selector. I have added a switch button to the units that I have created a conversion
+          for both*/
+          
+                function redirect() {
+                var InputUnit1 = document.getElementById("unit1").value;
+                var InputUnit2 = document.getElementById("unit2").value;
+                
+                if (InputUnit1 == "cm" && InputUnit2 == "m") {    
+                  window.location.href = "cmToM.html";
+                } else if (InputUnit1 == "kg" && InputUnit2 == "g") {
+                  window.location.href = "kgToG.html";
+                } else if (InputUnit1 == "m" && InputUnit2 == "cm") {
+                  window.location.href = "mToCm.html";
+                } else if (InputUnit1 == "g" && InputUnit2 == "kg") {
+                  window.location.href = "gToKg.html";
+                } else if (InputUnit1 == "cm" && InputUnit2 == "feet") {
+                  window.location.href = "cmToFeet.html";
+                } else if (InputUnit1 == "m" && InputUnit2 == "km") {
+                  window.location.href = "mToKm.html";
+                } else if (InputUnit1 == "MB" && InputUnit2 == "GB") {
+                  window.location.href = "mbToGb.html";
+                } else if (InputUnit1 == "Chlorine moles" && InputUnit2 == "g") {
+                  window.location.href = "clToG.html";
+                } else if (InputUnit1 == "RaSO4 moles" && InputUnit2 == "g") {
+                  window.location.href = "RtoG.html";
+                } else if (InputUnit1 == "RhF6 moles" && InputUnit2 == "g") {
+                  window.location.href = "RhtoG.html";
+                } else if (InputUnit1 == "quart/day" && InputUnit2 == "gallon/hour") {
+                  window.location.href = "qToGa.html";
+                } else if (InputUnit1 == "RON" && InputUnit2 == "NZD") {
+                  window.location.href = "RONtoNZD.html";
+                } else if (InputUnit1 == "GB" && InputUnit2 == "MB") {
+                  window.location.href = "GBtoMB.html";
+                } else {
+                  alert("Please enter a valid input");
+                }
+              }
+      </script>
+      
+        </div>
+        </form>
+        </section>
+        </body>
